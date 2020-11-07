@@ -1,0 +1,16 @@
+1.导入hibernatejar包，建一个libjar包，导入准备好的jar包
+
+2.在src下com.itprwe.entity建实体类User
+
+3.配置实体类与数据库表一一映射的对关系：
+    使用配置文件实现：
+    1）创建xml格式文件，映射配置文件名称和位置没有固定要求
+    2）建议在实体类所在的包里创建，实体类名.hbm.xml
+
+4.创建hibernate核心配置文件
+    1）核心配置文件格式.xml，位置必须在src下面，名称必须叫hibernate.cfg.xml
+    2）hibernate操作过程中智慧加载核心配置文件，不会加载其他配置文件
+    3）配置核心hibernate文件内容：
+        1）配置数据库信息
+        2）配置hibernate相关信息
+        3）把映射文件配置到核心配置文件中

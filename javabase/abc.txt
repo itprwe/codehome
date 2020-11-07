@@ -1,0 +1,2 @@
+package a copy method
+封装一个方法，五一节哈哈哈哈

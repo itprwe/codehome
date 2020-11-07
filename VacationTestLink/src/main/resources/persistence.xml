@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="persistenceUnit">
+        <class>com.ctrip.tour.testlink.dal.model.CrEntity</class>
+        <class>com.ctrip.tour.testlink.dal.model.ProjectEntity</class>
+        <class>com.ctrip.tour.testlink.dal.model.VersionEntity</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://10.3.8.90:3306/testlink"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.username"/>
+            <property name="hibernate.connection.password"/>
+        </properties>
+    </persistence-unit>
+</persistence>

@@ -1,0 +1,38 @@
+任务：用户信息管理系统
+
+子任务：
+    用户信息注册
+    用户信息查询
+    用户信息删除
+    用户信息修改
+
+准备工作：
+    1.创建用户信息表 User.frm
+//创建表
+    CREATE TABLE User(
+
+        userId int primary key auto_increment, #用户编号
+        userName varchar(50),   #用户名
+        password varchar(50),   #用户密码
+        sex char(1),            #用户性别 男 或 女
+        email varchar(50)        #用户邮箱
+    )
+
+    2.在src下建立 com.itprwe.entity.Users 实体类（属性变量为私有，其他get/set方法为public）
+        属性变量+get/set方法+有参、无参构造方法（new对象方便灵活）
+
+    3.在src下建立 com.itprwe.util.JdbcUtil 工具类[复用]
+
+    4.在web下WEB-INF下创建lib文件夹，存放mysql提供jdbc实现jar包
+
+    5.在web下面增加user_add.html文件
+
+    6.在src下建立 com.itprwe.controller.UserAddServlet;
+        控制调度文件：1，获取请求头中的信息，2.将请求头中的信息传给UserDao处理，3.将处理结果集返回给浏览器
+
+    7.在src下建立 com.itprwe.dao.UserDao;
+        处理数据，将数据插入数据库表，返回结果给UserAddServlet
+
+
+
+
